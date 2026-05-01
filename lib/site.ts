@@ -3,15 +3,18 @@ export const siteConfig = {
   tagline: "Cybersikkerhed for små og mellemstore virksomheder",
   description:
     "TechTrend Solutions leverer firewall-løsninger, netværksbeskyttelse og IT-sikkerhed til danske SMV'er. Beskyt din virksomhed mod cybertrusler – kontakt os for en gratis sikkerhedssamtale.",
-  url: "https://techtrendsolutions.dk",
+  url: "https://techtrendsolutions-dk.vercel.app",
   locale: "da_DK",
   email: "kontakt@techtrendsolutions.dk",
   phone: "+45 70 70 70 70",
   address: "København, Danmark",
   founders: ["Jonathan", "Camilla"],
   founded: 2015,
-  social: {
-    linkedin: "https://www.linkedin.com/company/techtrend-solutions",
+  // Sociale profiler er ikke oprettet endnu (caseprojekt).
+  // Tilføj fx 'linkedin' her, og opdater Footer.tsx + JSON-LD i layout.tsx.
+  social: {} as { linkedin?: string },
+  analytics: {
+    googleAnalyticsId: "G-P9VXM6HQ00",
   },
 };
 
