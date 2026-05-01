@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CTASection } from "../components/CTASection";
-import { ImagePlaceholder } from "../components/ImagePlaceholder";
+import { BrandImage } from "../components/BrandImage";
 import { JsonLd } from "../components/JsonLd";
 import { siteConfig } from "@/lib/site";
 
@@ -77,10 +77,11 @@ export default function OmOsPage() {
                 at navigere i en verden, hvor cybertrusler bliver mere avancerede.
               </p>
             </div>
-            <ImagePlaceholder
-              label="Foto af de to medstiftere Jonathan og Camilla"
+            <BrandImage
+              src="/images/founders.jpg"
+              alt="Jonathan og Camilla – medstiftere af TechTrend Solutions"
               ratio="square"
-              tone="cyan"
+              priority
             />
           </div>
         </div>
@@ -89,10 +90,10 @@ export default function OmOsPage() {
       {/* MISSION */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8" aria-labelledby="mission-heading">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <ImagePlaceholder
-            label="Foto af TechTrend Solutions-team i samarbejde"
+          <BrandImage
+            src="/images/team-collab.jpg"
+            alt="TechTrend Solutions-teamet i samarbejde på kontoret"
             ratio="video"
-            tone="blue"
           />
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">Vores mission</p>

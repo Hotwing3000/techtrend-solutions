@@ -6,6 +6,8 @@ export type Service = {
   description: string;
   features: string[];
   icon: "shield" | "network" | "backup" | "key" | "monitor";
+  image: string;
+  imageAlt: string;
 };
 
 export const services: Service[] = [
@@ -23,6 +25,8 @@ export const services: Service[] = [
       "24/7 trusselsovervågning",
     ],
     icon: "shield",
+    image: "/images/service-firewall.png",
+    imageAlt: "Illustration af firewall-løsning der filtrerer netværkstrafik",
   },
   {
     id: "netvaerk",
@@ -38,6 +42,8 @@ export const services: Service[] = [
       "Detektion af mistænkelig trafik",
     ],
     icon: "network",
+    image: "/images/service-network.png",
+    imageAlt: "Illustration af forbundet netværk med beskyttede noder",
   },
   {
     id: "backup",
@@ -53,6 +59,8 @@ export const services: Service[] = [
       "GDPR-compliant dataopbevaring",
     ],
     icon: "backup",
+    image: "/images/service-backup.png",
+    imageAlt: "Illustration af sikker krypteret cloud-backup mellem skyer",
   },
   {
     id: "adgang",
@@ -68,6 +76,8 @@ export const services: Service[] = [
       "Hurtig on- og offboarding",
     ],
     icon: "key",
+    image: "/images/service-access.png",
+    imageAlt: "Illustration af adgangsstyring med nøgle og brugerikoner",
   },
   {
     id: "overvaagning",
@@ -83,5 +93,7 @@ export const services: Service[] = [
       "Hurtig respons fra dansk team",
     ],
     icon: "monitor",
+    image: "/images/service-monitoring.png",
+    imageAlt: "Illustration af IT-overvågnings-dashboard med live status",
   },
 ];

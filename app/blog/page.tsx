@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "../components/CTASection";
-import { ImagePlaceholder } from "../components/ImagePlaceholder";
+import { BrandImage } from "../components/BrandImage";
 import { JsonLd } from "../components/JsonLd";
 import { posts } from "@/lib/posts";
 import { siteConfig } from "@/lib/site";
@@ -57,7 +57,7 @@ export default function BlogIndexPage() {
           href={`/blog/${featured.slug}`}
           className="group grid gap-8 overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-sm transition hover:shadow-lg lg:grid-cols-2"
         >
-          <ImagePlaceholder label={featured.imageAlt} ratio="video" tone={featured.tone} className="rounded-2xl" />
+          <BrandImage src={featured.image} alt={featured.imageAlt} ratio="video" priority />
           <div className="flex flex-col justify-center p-6 lg:p-8">
             <div className="flex items-center gap-2">
               <span className="rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700">
@@ -89,7 +89,7 @@ export default function BlogIndexPage() {
               href={`/blog/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
-              <ImagePlaceholder label={post.imageAlt} ratio="video" tone={post.tone} />
+              <BrandImage src={post.image} alt={post.imageAlt} ratio="video" />
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-xs font-medium uppercase tracking-wider text-brand-700">
                   {post.category}

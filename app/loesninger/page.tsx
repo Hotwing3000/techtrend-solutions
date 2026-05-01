@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CTASection } from "../components/CTASection";
-import { ImagePlaceholder } from "../components/ImagePlaceholder";
+import { BrandImage } from "../components/BrandImage";
 import { ServiceIcon } from "../components/ServiceIcon";
 import { JsonLd } from "../components/JsonLd";
 import { services } from "@/lib/services";
@@ -113,10 +113,10 @@ export default function LoesningerPage() {
                 </div>
 
                 <div className="lg:[direction:ltr]">
-                  <ImagePlaceholder
-                    label={`Illustration: ${service.shortTitle}`}
+                  <BrandImage
+                    src={service.image}
+                    alt={service.imageAlt}
                     ratio="square"
-                    tone={i % 3 === 0 ? "blue" : i % 3 === 1 ? "cyan" : "slate"}
                   />
                 </div>
               </div>

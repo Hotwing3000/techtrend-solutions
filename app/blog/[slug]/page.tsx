@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CTASection } from "../../components/CTASection";
-import { ImagePlaceholder } from "../../components/ImagePlaceholder";
+import { BrandImage } from "../../components/BrandImage";
 import { JsonLd } from "../../components/JsonLd";
 import { getPostBySlug, posts } from "@/lib/posts";
 import { siteConfig } from "@/lib/site";
@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="-mt-2 mb-12">
-          <ImagePlaceholder label={post.imageAlt} ratio="wide" tone={post.tone} />
+          <BrandImage src={post.image} alt={post.imageAlt} ratio="wide" priority />
         </div>
 
         <div className="prose-content space-y-5 text-lg leading-relaxed text-slate-700">
@@ -177,7 +177,7 @@ export default async function BlogPostPage({ params }: Props) {
                   className="group flex gap-5 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:shadow-md"
                 >
                   <div className="w-32 flex-none">
-                    <ImagePlaceholder label={p.imageAlt} ratio="square" tone={p.tone} className="!rounded-xl" />
+                    <BrandImage src={p.image} alt={p.imageAlt} ratio="square" className="!rounded-xl" />
                   </div>
                   <div className="flex flex-1 flex-col justify-center pr-3">
                     <p className="text-xs font-medium uppercase tracking-wider text-brand-700">

@@ -10,6 +10,7 @@ export type Post = {
   author: string;
   readingTime: number;
   imageAlt: string;
+  image: string;
   tone: PostTone;
   keywords: string[];
   content: { type: "h2" | "h3" | "p" | "ul" | "callout"; text?: string; items?: string[] }[];
@@ -27,6 +28,7 @@ export const posts: Post[] = [
     author: "Camilla, medstifter af TechTrend Solutions",
     readingTime: 6,
     imageAlt: "Illustration af firewall der beskytter et virksomhedsnetværk",
+    image: "/images/blog-firewall.png",
     tone: "blue",
     keywords: [
       "firewall",
@@ -120,6 +122,7 @@ export const posts: Post[] = [
     author: "Jonathan, medstifter af TechTrend Solutions",
     readingTime: 5,
     imageAlt: "Illustration af advarselssymboler på computerskærme i kontor",
+    image: "/images/blog-vulnerable.png",
     tone: "cyan",
     keywords: [
       "cybersikkerhed SMV",
@@ -170,6 +173,7 @@ export const posts: Post[] = [
     author: "Camilla, medstifter af TechTrend Solutions",
     readingTime: 7,
     imageAlt: "Illustration af GDPR og databeskyttelse for små virksomheder",
+    image: "/images/blog-gdpr.png",
     tone: "slate",
     keywords: ["GDPR", "IT-sikkerhed for virksomheder", "cybersikkerhed SMV"],
     content: [
@@ -210,6 +214,7 @@ export const posts: Post[] = [
     author: "Jonathan, medstifter af TechTrend Solutions",
     readingTime: 6,
     imageAlt: "Illustration af låst computer med ransomware-besked",
+    image: "/images/blog-ransomware.png",
     tone: "blue",
     keywords: ["ransomware", "cybertrusler", "firewall-løsninger", "cybersikkerhed"],
     content: [

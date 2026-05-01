@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { CTASection } from "./components/CTASection";
-import { ImagePlaceholder } from "./components/ImagePlaceholder";
+import { BrandImage } from "./components/BrandImage";
 import { ServiceIcon } from "./components/ServiceIcon";
 import { JsonLd } from "./components/JsonLd";
 import { services } from "@/lib/services";
@@ -132,10 +132,11 @@ export default function HomePage() {
 
             <div className="relative animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-brand-200/40 to-accent-400/20 blur-2xl" aria-hidden />
-              <ImagePlaceholder
-                label="Hero-billede: dansk SMV-team i kontor med sikker IT-infrastruktur"
+              <BrandImage
+                src="/images/hero.png"
+                alt="Skjold med datapartikler – cybersikkerhed for SMV'er"
                 ratio="square"
-                tone="cyan"
+                priority
               />
             </div>
           </div>
@@ -227,10 +228,10 @@ export default function HomePage() {
               </dl>
             </div>
             <div>
-              <ImagePlaceholder
-                label="Foto af TechTrend Solutions-team i samtale med kunde"
+              <BrandImage
+                src="/images/team-meeting.jpg"
+                alt="TechTrend Solutions-team i møde med kunde"
                 ratio="portrait"
-                tone="blue"
               />
             </div>
           </div>
@@ -278,7 +279,7 @@ export default function HomePage() {
               href={`/blog/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
-              <ImagePlaceholder label={post.imageAlt} ratio="video" tone={post.tone} />
+              <BrandImage src={post.image} alt={post.imageAlt} ratio="video" />
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-xs font-medium uppercase tracking-wider text-brand-700">
                   {post.category}
