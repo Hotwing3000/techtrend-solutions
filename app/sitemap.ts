@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/om-os`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: `${base}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/kontakt`, lastModified: now, changeFrequency: "yearly", priority: 0.9 },
+    { url: `${base}/persondatapolitik`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/cookiepolitik`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const blogRoutes: MetadataRoute.Sitemap = posts.map((p) => ({
