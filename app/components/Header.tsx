@@ -16,7 +16,7 @@ export function Header() {
         <Logo />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Hovednavigation">
-          {mainNav.slice(0, -1).map((item) => {
+          {mainNav.map((item) => {
             const active =
               pathname === item.href ||
               (item.href !== "/" && pathname.startsWith(item.href));
