@@ -27,7 +27,7 @@ export default function PersondatapolitikPage() {
         <br />
         {siteConfig.address}
         <br />
-        CVR: 12345678
+        CVR: 00000000
         <br />
         E-mail:{" "}
         <a href={`mailto:${siteConfig.email}`} className="text-brand-700 hover:underline">

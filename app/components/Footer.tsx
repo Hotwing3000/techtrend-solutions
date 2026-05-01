@@ -54,7 +54,7 @@ export function Footer() {
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <CookieSettingsLink />
             <span className="hidden md:inline" aria-hidden>·</span>
-            <p>CVR 12345678 · {siteConfig.address}</p>
+            <p>CVR 00000000 · {siteConfig.address}</p>
           </div>
         </div>
         <div className="mt-4 space-y-2 text-[11px] leading-relaxed text-slate-400">

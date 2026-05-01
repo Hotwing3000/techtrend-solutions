@@ -16,7 +16,7 @@ export default function CookiepolitikPage() {
   return (
     <LegalLayout
       title="Cookiepolitik"
-      intro="Denne politik forklarer, hvilke cookies vi bruger på techtrendsolutions.dk, hvorfor vi bruger dem, og hvordan du selv styrer dit samtykke."
+      intro="Denne politik forklarer, hvilke cookies vi bruger på techtrendsolutions-dk.vercel.app, hvorfor vi bruger dem, og hvordan du selv styrer dit samtykke."
       lastUpdated="29. april 2026"
     >
       <LegalH2 id="hvad-er-cookies">1. Hvad er cookies?</LegalH2>
@@ -59,7 +59,7 @@ export default function CookiepolitikPage() {
           <tbody className="divide-y divide-slate-100">
             <tr>
               <td className="px-4 py-3 align-top">cookie-consent</td>
-              <td className="px-4 py-3 align-top">techtrendsolutions.dk</td>
+              <td className="px-4 py-3 align-top">techtrendsolutions-dk.vercel.app</td>
               <td className="px-4 py-3 align-top">Husker dit cookie-valg</td>
               <td className="px-4 py-3 align-top">12 mdr.</td>
             </tr>

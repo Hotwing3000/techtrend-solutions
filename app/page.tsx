@@ -251,8 +251,8 @@ export default function HomePage() {
           <figcaption className="mt-8 flex items-center justify-center gap-4">
             <div className="h-12 w-12 rounded-full bg-gradient-to-br from-brand-200 to-accent-400" aria-hidden />
             <div className="text-left">
-              <div className="font-semibold text-slate-900">Mette Nielsen</div>
-              <div className="text-sm text-slate-500">CEO, Nordisk Detail ApS</div>
+              <div className="font-semibold text-slate-900">M. N. <span className="font-normal text-slate-400">(eksempel)</span></div>
+              <div className="text-sm text-slate-500">CEO i en dansk detailvirksomhed</div>
             </div>
           </figcaption>
         </figure>
