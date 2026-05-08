@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Cybersikkerhed for små og mellemstore virksomheder",
   description:
     "TechTrend Solutions leverer firewall-løsninger, netværksbeskyttelse og IT-sikkerhed til danske SMV'er. Beskyt din virksomhed mod cybertrusler – kontakt os for en gratis sikkerhedssamtale.",
-  url: "https://techtrendsolutions-dk.vercel.app",
+  url: "https://hotwing-dev.vercel.app",
   locale: "da_DK",
   email: "kontakt@example.com",
   phone: "+45 00 00 00 00",
